@@ -1,0 +1,7 @@
+{
+  "name": "mundoTEC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
