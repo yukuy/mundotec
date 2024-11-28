@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="chat-container">
+    <div class="info">
+      <h1>¡Bienvenido al <span>Chat de Ayuda</span>!</h1>
+      <p>Haz tus preguntas y recibe respuestas rápidas.</p>
+    </div>
+
+    <!-- Mostrar los mensajes -->
+    <div class="messages">
+      <div *ngFor="let message of messages">
+        <div
+          [class]="message.sender === 'bot' ? 'bot-message' : 'user-message'"
+        >
+          <p>{{ message.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-item class="input-container">
+    <ion-input
+      placeholder="Escribe tu pregunta..."
+      [(ngModel)]="userMessage"
+    ></ion-input>
+    <ion-button expand="block" (click)="sendMessage()"><ion-icon name="send"></ion-icon></ion-button>
+  </ion-item>
+</ion-footer>

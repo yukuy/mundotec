@@ -1,0 +1,112 @@
+ion-content {
+    --background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye los elementos verticalmente */
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    overflow: hidden; /* Evita que los elementos salgan de los límites */
+  }
+  
+  .info {
+    text-align: center;
+    color: #ffffff;
+    animation: fadeIn 1.5s ease-in-out;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  
+  .info h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .info h1 span {
+    color: #4db8ff;
+  }
+  
+  .info p {
+    font-size: 1rem;
+    font-family: cursive;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenedor principal del chat */
+  .chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  
+  /* Estilos para los mensajes */
+  .messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los mensajes */
+  }
+  
+  .bot-message,
+  .user-message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    word-wrap: break-word;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bot-message {
+    background-color: #4db8ff;
+    color: #ffffff;
+    align-self: flex-start;
+  }
+  
+  .user-message {
+    background-color: #fa5151;
+    color: #2a5298;
+    align-self: flex-end;
+  }
+  
+  /* Barra de entrada */
+  ion-footer {
+    position: sticky; /* Asegura que el footer permanezca visible */
+    bottom: 0;
+    background: rgba(3, 28, 250, 0.712);
+    padding: 10px;
+  }
+  
+  ion-item.input-container {
+    --background: transparent;
+    --border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  
+  ion-input {
+    --placeholder-color: #ccc;
+    color: #ffffff;
+    flex: 1;
+  }
+  
+  ion-button {
+    --background: #4db8ff;
+    --border-radius: 10px; /* Redondeado más pequeño */
+    font-size: 0.9rem; /* Texto más pequeño */
+    padding: 5px 10px; /* Botón más compacto */
+    box-shadow: 0 4px 8px rgb(255, 255, 255);
+    margin: 5px 0; /* Espacio entre botones */
+    transition: transform 0.3s ease;
+  }
+  
+  ion-button:hover {
+    transform: scale(1.05);
+  }
+  

@@ -1,20 +1,10 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="inicio">
+    <h1>Gracias por escogernos <span>su mejor opcion</span></h1>
+    <img src="\assets\img\mundotec.webp" alt="mundotec">
+    <ion-button fill="solid" color="primary" [routerLink]="['/login']">
+      <ion-icon slot="start" name="log-in-outline"></ion-icon>
+      Ingresar
+    </ion-button>
   </div>
 </ion-content>

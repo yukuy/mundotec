@@ -1,0 +1,26 @@
+<ion-content class="ion-padding">
+  <div class="title">
+    <h1>POR FAVOR REGISTRARSE</h1>
+    <div class="register">
+      <img src="\assets\img\register.png" alt="register">
+      <form (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input type="text" [(ngModel)]="nombre" name="nombre" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Correo</ion-label>
+          <ion-input type="email" [(ngModel)]="correo" name="correo" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Clave</ion-label>
+          <ion-input type="password" [(ngModel)]="clave" name="clave" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" type="submit">Registrar</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

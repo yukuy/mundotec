@@ -1,0 +1,32 @@
+<ion-content>
+  <div class="info">
+    <h1>Agendar Servicios</h1>
+    <p>Escoge tu servicio y programa tu cita fácilmente.</p>
+
+    <div class="booking-form">
+      <!-- Selección de servicio -->
+      <label for="service">Servicio:</label>
+      <ion-select id="service" placeholder="Selecciona un servicio">
+        <ion-select-option value="consultoria">Consultoría y Asesoría</ion-select-option>
+        <ion-select-option value="desarrollo">Desarrollo de Software</ion-select-option>
+        <ion-select-option value="ciberseguridad">Ciberseguridad</ion-select-option>
+        <ion-select-option value="mantenimiento">Mantenimiento y Reparación</ion-select-option>
+        <ion-select-option value="capacitacion">Capacitación y Cursos</ion-select-option>
+      </ion-select>
+
+      <!-- Selección de fecha y hora -->
+      <label for="datetime">Fecha y Hora:</label>
+      <ion-datetime id="datetime" display-format="DD MMM YYYY HH:mm" placeholder="Selecciona fecha y hora"></ion-datetime>
+
+      <!-- Información de contacto -->
+      <label for="name">Nombre:</label>
+      <ion-input id="name" placeholder="Tu nombre completo"></ion-input>
+
+      <label for="email">Correo:</label>
+      <ion-input id="email" type="email" placeholder="tu@correo.com"></ion-input>
+
+      <!-- Botón de agendar -->
+      <ion-button expand="block" class="main-button">Agendar Cita</ion-button>
+    </div>
+  </div>
+</ion-content>

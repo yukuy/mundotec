@@ -1,0 +1,72 @@
+ion-content {
+    --background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: cursive;
+
+  }
+  .info {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra el contenido horizontalmente */
+    gap: 10px; /* Espacio entre la imagen y el botón */
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    animation: fadeIn 1.5s ease-in-out;
+  
+  }
+  .info h1 span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #4db8ff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+
+  }
+  .profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;       /* Ancho del contenedor */
+    height: 300px;      /* Alto del contenedor */
+    border-radius: 50%; /* Hace el contenedor circular */
+    overflow: hidden;   /* Esconde cualquier parte de la imagen que sobresalga */
+    border: 5px solid #53666e; /* Color y grosor del borde */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para un efecto en 3D */
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  
+  .profile-image {
+    width: 100%;        /* Ajusta la imagen para que ocupe el contenedor */
+    height: auto;       /* Mantiene la relación de aspecto de la imagen */
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  ion-button {
+    --background: #4db8ff;
+    --border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgb(252, 251, 251);
+  }
+  
+  ion-button:hover {
+    transform: scale(1.05);
+  }
+  :root {
+    --ion-background-color: #ffffff;
+    --ion-text-color: #000000;
+  }
+  
+  .dark {
+    --ion-background-color: #1e1e1e;
+    --ion-text-color: #ffffff;
+  }
+  

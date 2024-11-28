@@ -1,27 +1,70 @@
-#container {
+ion-content {
+  --background: linear-gradient(to bottom right, #041431, #2a5298);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: cursive;
+}
+
+ion-toolbar {
+  --background: transparent;
+  backdrop-filter: blur(10px);
+  border-bottom: none;
+}
+
+.inicio {
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column; /* Organiza los elementos en columna */
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 10px; /* Espacio entre la imagen y el botón */
+  padding: 20px;
+  color: #ffffff;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.inicio h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
+.inicio h1 span {
+  color: #4db8ff; /* Color llamativo para "mundoTEC" */
+}
+.inicio img{
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  width: 340px;
+  box-shadow: 0 8px 16px rgb(252, 251, 251);
 
-  color: #8c8c8c;
-
-  margin: 0;
 }
 
-#container a {
-  text-decoration: none;
+ion-button {
+  --background: #4db8ff;
+  --border-radius: 20px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgb(252, 251, 251);
+  transition: transform 0.3s ease;
+}
+
+ion-button:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
